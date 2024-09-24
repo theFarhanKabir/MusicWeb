@@ -1,0 +1,172 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Login Page Styles */
+.login-page {
+    background-image: url('https://example.com/background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.login-page h1 {
+    color: white;
+}
+
+/* Home Page Styles */
+.home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.menu-item {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.menu-item:hover {
+    background-color: #0056b3;
+}
+
+/* Registration Page Styles */
+.registration-page {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* History Page Styles */
+.history-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#historyList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.history-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Favourites Page Styles */
+.favourites-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#favouritesList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.favourite-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Album Page Styles */
+.album-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#albumList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.album-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Artist Page Styles */
+.artist-page {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#artistList {
+    list-style-type: none;
+    padding: 0;
+}
+
+.artist-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}

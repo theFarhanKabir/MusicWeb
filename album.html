@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player - Albums</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="album-page section-container">
+        <header>
+            <h1>Albums</h1>
+            <a href="home.html" class="home-link">Home</a>
+        </header>
+        <ul id="albumList"></ul>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const albumListElement = document.getElementById('albumList');
+            
+            fetch('php/get_albums.php')
+                .then(response => response.json())
+                .then(albums => {
+                    albums.forEach(album => {
+                        const li = document.createElement('li');
+                        li.textContent = `${album.title} (${album.genre}) - Released: ${album.release_date}`;
+                        albumListElement.appendChild(li);
+                    });
+                })
+                .catch(error => console.error('Error fetching albums:', error));
+        });
+    </script>
+</body>
+</html>
